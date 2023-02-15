@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    margin: 10rem;
+    line-height: 1.5rem;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+}
+
+article {
+    color: hsl(0, 0%, 95%);
+    text-align: left;
+    padding: 0 2rem 2rem 0;
+   
+}
+
+button { 
+    background-color: hsl(0, 0%, 95%); 
+    border-radius: 1.5rem;
+    border-width: 0;
+    width: 150px;
+    height: 45px;
+    margin: 2rem 0 2rem 3rem;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+    border: 0.2rem solid hsl(0, 0%, 95%);
+}
+
+
+article:first-child {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+article:first-child .btn {
+    color: hsl(31, 77%, 52%);
+ 
+ }
+
+article:nth-child(2){
+    background-color: hsl(184, 100%, 22%);
+}
+
+article:nth-child(2) .btn {
+    color: hsl(184, 100%, 22%);
+  
+}
+
+article:last-child {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+article:last-child .btn {
+    color: hsl(179, 100%, 13%);
+    
+}
+
+article .btn:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    transition: all 0.4s ease-in-out;
+}
+
+h1, p, img {
+    margin: 0.5rem 3rem 2.5rem 3rem;
+
+}
+
+img {
+    padding-top: 2.5rem;
+}
+
+
+h1 {
+    font-size: 40px;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.attribution { 
+    color: hsl(179, 100%, 13%);
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 2rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 640px) {
+    body {
+        margin: 4rem;
+    }
+    .container{
+        display: inline-block;
+    }
+
+    article:first-child {
+        border-radius: 0;
+    }
+
+    article:last-child {
+        border-radius: 0;
+    }
+
+}
